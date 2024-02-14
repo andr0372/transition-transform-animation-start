@@ -1,0 +1,47 @@
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* space is descendent combinator */
+nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    flex: 1;
+}
+
+/* > is direct child selector */
+main>p{
+    font-size:  1.5rem;
+}
+
+/* + is direct child selector */
+h2 +P{
+    background-color: black;
+    color: white;
+    padding: 1rem;
+}
+
+/* ~ is sibling seletor */
+.stars span:hover ~span{
+    opacity: 0.2;
+}
+
+.stars span {
+    cursor: pointer;
+}
+
+/* [] is a attribute selector */
+
+a[href^="http"]{
+    color: rgb(54, 84, 21);
+}
+
+a[href$="pdf"]{
+    font-size: 1.2rem;
+}
